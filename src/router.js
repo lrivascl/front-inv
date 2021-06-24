@@ -16,6 +16,22 @@ const routes = [
 		path:"/add",
 		name:"add",
 		component: ()=> import("./components/AddProducto.vue")
+	},
+	{
+		path:"/",
+		alias:"/clientes",
+		name:"clientes",
+		component: ()=> import("./components/ClientesList.vue") 
+	},
+	{
+		path:"/clientes/:idCliente",
+		name:"clientes-details",
+		component: ()=> import("./components/Cliente.vue")
+	},
+	{
+		path:"/addcliente",
+		name:"addcliente",
+		component: ()=> import("./components/AddCliente.vue")
 	}
 ];
 const router = createRouter({

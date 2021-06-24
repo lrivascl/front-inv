@@ -41,7 +41,13 @@
           <label><strong>Descripcion:</strong></label> {{ currentProducto.descripcion }}
         </div>
         <div>
-          <label><strong>Codigo:</strong></label> {{ currentProducto.codigo }}
+          <label><strong>Codigo Barra:</strong></label> {{ currentProducto.codigo }}
+        </div>
+        <div>
+          <label><strong>Precio:</strong></label> {{ currentProducto.precio }}
+        </div>
+        <div>
+          <label><strong>Stock:</strong></label> {{ currentProducto.cantidad }}
         </div>
         <div>
           <label><strong>Status:</strong></label> {{ currentProducto.published ? "Published" : "Pending" }}

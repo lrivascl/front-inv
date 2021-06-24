@@ -24,6 +24,37 @@
         </li>
       </div>
 
+      <div class="navbar-nav mr-auto">
+        <!--CLIENTES-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clientes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><router-link to="/clientes" class="dropdown-item">Listar Clientes</router-link></li>
+            <li><router-link to="/addcliente" class="dropdown-item">Agregar Clientes</router-link></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="navbar-nav mr-auto">
+        <!--TRX-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            TRX
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><router-link to="/productos" class="dropdown-item">Listar TRX</router-link></li>
+            <li><router-link to="/add" class="dropdown-item">Agregar TRX Venta</router-link></li>
+            <li><router-link to="/add" class="dropdown-item">Agregar TRX Stock</router-link></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </div>
+
     </nav>
 
     <div class="container mt-3">

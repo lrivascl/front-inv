@@ -34,6 +34,17 @@
           name="codigo"
         />
       </div>
+
+      <div class="form-group">
+        <label for="precio">Precio</label>
+        <input
+          class="form-control"
+          id="precio"
+          required
+          v-model="producto.precio"
+          name="precio"
+        />
+      </div>
       
 
       <button @click="saveProducto" class="btn btn-success">Enviar</button>
@@ -58,6 +69,8 @@ export default{
                 nombre:"",
                 descripcion:"",
                 codigo:"",
+                precio:"",
+                cantidad:"0",
                 published:false
             },
             submitted: false
@@ -68,7 +81,8 @@ export default{
             var data ={
                 nombre: this.producto.nombre,
                 descripcion: this.producto.descripcion,
-                codigo: this.producto.codigo
+                codigo: this.producto.codigo,
+                precio: this.producto.precio,
             };
 
             TutorialDataService.create(data)

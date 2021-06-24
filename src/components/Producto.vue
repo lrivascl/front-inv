@@ -20,6 +20,12 @@
           v-model="currentProducto.codigo"
         />
       </div>
+      <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="number" class="form-control" id="precio"
+          v-model="currentProducto.precio"
+        />
+      </div>
 
       <div class="form-group">
         <label><strong>Status:</strong></label>
@@ -40,7 +46,7 @@
     </button>
 
     <button class="btn btn-danger"
-      @click="deleteProdcuto"
+      @click="deleteProducto"
     >
       Delete
     </button>
@@ -87,6 +93,7 @@ export default {
                 id: this.currentProducto.id,
                 nombre: this.currentProducto.nombre,
                 codigo: this.currentProducto.codigo,
+                precio: this.currectProducto.precio,
                 descripcion: this.currentProducto.descripcion,
                 published: status
             };
